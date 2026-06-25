@@ -41,32 +41,6 @@ The platform combines:
   * Dockerized deployment architecture
   * Minimal runtime footprint
 
-## Architecture
-
-```text
-┌──────────────────────┐
-│   Client Requests    │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│  FastAPI Gateway     │
-│ (Telemetry Ingress)  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│   ScaleRL Agent      │
-│  (Q-Learning Policy) │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Cache & Routing      │
-│ Control Actions      │
-└──────────────────────┘
-```
-
 ## System Components
 
 ### 1. Inference Gateway
