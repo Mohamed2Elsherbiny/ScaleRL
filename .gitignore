@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Experiment tracking runs (reproducible from configs).
+runs/
+mlruns/
+
+# Training artifacts (regenerate with train.py / evaluate.py).
+# The learning-curve and benchmark plots ARE committed for the README;
+# trained weights and raw metrics are reproducible, so they are ignored.
+artifacts/q_table.npy
+artifacts/dqn.pt
+artifacts/model_meta.json
+artifacts/qlearning_meta.json
+artifacts/dqn_meta.json
+artifacts/benchmark_results.json
+artifacts/benchmark_results.csv

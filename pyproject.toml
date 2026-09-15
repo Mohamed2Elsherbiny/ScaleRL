@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]  # line length handled by formatter; long strings are fine
+
+[tool.ruff.lint.per-file-ignores]
+# importorskip("torch") must run before importing torch-dependent modules.
+"tests/test_dqn.py" = ["E402"]

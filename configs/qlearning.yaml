@@ -1,0 +1,17 @@
+# Tabular Q-learning experiment.
+name: qlearning-baseline
+algo: qlearning
+seed: 42
+total_steps: 400000
+eval_every_steps: 10000
+
+env:
+  max_steps: 500
+
+agent:
+  gamma: 0.95
+  alpha: 0.1
+  epsilon_decay: 0.995
+  latency_bins: 12
+  memory_bins: 10
+  request_bins: 10
